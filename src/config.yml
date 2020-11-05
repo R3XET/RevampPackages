@@ -1,0 +1,996 @@
+#   ██╗ ██╗  ██╗     █████╗ ██████╗ ██╗██╗     ██╗████████╗██╗   ██╗    ██████╗ ██╗     ██╗   ██╗ ██████╗ ██╗███╗   ██╗
+#  ████████╗███║    ██╔══██╗██╔══██╗██║██║     ██║╚══██╔══╝╚██╗ ██╔╝    ██╔══██╗██║     ██║   ██║██╔════╝ ██║████╗  ██║
+#  ╚██╔═██╔╝╚██║    ███████║██████╔╝██║██║     ██║   ██║    ╚████╔╝     ██████╔╝██║     ██║   ██║██║  ███╗██║██╔██╗ ██║
+#  ████████╗ ██║    ██╔══██║██╔══██╗██║██║     ██║   ██║     ╚██╔╝      ██╔═══╝ ██║     ██║   ██║██║   ██║██║██║╚██╗██║
+#  ╚██╔═██╔╝ ██║    ██║  ██║██████╔╝██║███████╗██║   ██║      ██║       ██║     ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║
+#   ╚═╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝╚═════╝ ╚═╝╚══════╝╚═╝   ╚═╝      ╚═╝       ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝
+#
+
+##############################################################
+##                      LICENSE SYSTEM                      ##
+##############################################################
+#PUT HERE YOUR LICENSE KEY! IF YOU DON'T HAVE ONE CONTACT THE AUTHOR ON DISCORD (R3XET#0852) / MC-MARKET (R3XET)
+LICENSE: "XXXX-XXXX-XXXX-XXXX"
+#PUT HERE YOUR LICENSE KEY! IF YOU DON'T HAVE ONE CONTACT THE AUTHOR ON DISCORD (R3XET#0852) / MC-MARKET (R3XET)
+##############################################################
+
+##############################################################
+##                   WORLDGUARD INTEGRATION                 ##
+##############################################################
+# Should we block abilities in blocked regions?
+DENY_ABILITY_USE_IN_NO_PVP_REGIONS: true
+# Should we block abilities in blocked regions?
+##############################################################
+##                      GENERAL SETTINGS                    ##
+##############################################################
+# Should disable chicken spawning from eggs?
+DISABLE_CHICKEN_SPAWN: true
+##############################################################
+
+# +++______------______------______------______------______+++
+#  +_______________________________________________________+ #
+#  |              Partner Packages Section                 | #
+#  +_______________________________________________________+ #
+# +++______------______------______------______------______+++
+
+packages:
+  SlownessSnowball:
+    DISPLAY_NAME: "&b&lSlowness Snowball"
+    COMMANDS:
+      - "revampability give %player% snowball 8"
+    ITEMS:
+  SwitcherEgg:
+    DISPLAY_NAME: "&6&lSwitcher Egg"
+    COMMANDS:
+      - "revampability give %player% switcheregg 8"
+    ITEMS:
+  BlockEgg:
+    DISPLAY_NAME: "&6&lBlock Egg"
+    COMMANDS:
+      - "revampability give %player% blockegg 8"
+    ITEMS:
+  ThrowableCobweb:
+    DISPLAY_NAME: "&2&lThrowable Cobweb"
+    COMMANDS:
+      - "revampability give %player% throwweb 8"
+    ITEMS:
+  NinjaAbility:
+    DISPLAY_NAME: "&e&lNinja Ability"
+    COMMANDS:
+      - "revampability give %player% ninja 1"
+  DisarmerAxe:
+    DISPLAY_NAME: "&c&lDisarmer Axe"
+    COMMANDS:
+      - "revampability give %player% disarmeraxe 1"
+    ITEMS:
+  FreezeGun:
+    DISPLAY_NAME: "&f&lFreeze Gun"
+    COMMANDS:
+      - "revampability give %player% freezegun 1"
+    ITEMS:
+  InvisDust:
+    DISPLAY_NAME: "&3&lInvisibility Dust"
+    COMMANDS:
+      - "revampability give %player% invisdust 1"
+    ITEMS:
+  Cocaine:
+    DISPLAY_NAME: "&f&lCocaine"
+    COMMANDS:
+      - "revampability give %player% cocaine 1"
+    ITEMS:
+  SecondChance:
+    DISPLAY_NAME: "&d&lSecond Chance"
+    COMMANDS:
+      - "revampability give %player% secondchance 1"
+    ITEMS:
+  GrapplingHook:
+    DISPLAY_NAME: "&6&lGrappling Hook"
+    COMMANDS:
+      - "revampability give %player% grapplinghook 1"
+    ITEMS:
+  Rocket:
+    DISPLAY_NAME: "&2&lRocket"
+    COMMANDS:
+      - "revampability give %player% rocket 4"
+    ITEMS:
+  PumpkinSwapper:
+    DISPLAY_NAME: "&2&lPumpkin Swapper"
+    COMMANDS:
+      - "revampability give %player% rocket 4"
+    ITEMS:
+  CooldownBow:
+    DISPLAY_NAME: "&5&lCooldown Bow"
+    COMMANDS:
+      - "revampability give %player% cooldownbow 4"
+    ITEMS:
+  Randomizer:
+    DISPLAY_NAME: "&9&lRandomizer"
+    COMMANDS:
+      - "revampability give %player% randomizer 4"
+    ITEMS:
+  PortableStrength:
+    DISPLAY_NAME: "&6&lPortable Strength"
+    COMMANDS:
+      - "revampability give %player% portablestrength 4"
+    ITEMS:
+  LumberJack:
+    DISPLAY_NAME: "&6&lLumberJack Axe"
+    COMMANDS:
+      - "revampability give %player% lumberjack 1"
+    ITEMS:
+  PyroBall:
+    DISPLAY_NAME: "&4&lPyro Ball"
+    COMMANDS:
+      - "revampability give %player% pyroball 4"
+    ITEMS:
+  UltimatePearl:
+    DISPLAY_NAME: "&b&lUltimate Pearl"
+    COMMANDS:
+      - "revampability give %player% ultimatepearl 4"
+    ITEMS:
+  RotationStick:
+    DISPLAY_NAME: "&5&lRotation Stick"
+    COMMANDS:
+      - "revampability give %player% rotationstick 4"
+    ITEMS:
+  GuardianAngel:
+    DISPLAY_NAME: "&d&lGuardian Angel"
+    COMMANDS:
+      - "revampability give %player% guardianangel 4"
+    ITEMS:
+  RefillChest:
+    DISPLAY_NAME: "&6&lLazy Brewer"
+    COMMANDS:
+      - "revampability give %player% refillchest 2"
+    ITEMS:
+  IcaroFeather:
+    DISPLAY_NAME: "&f&lIcaro Feather"
+    COMMANDS:
+      - "revampability give %player% icarofeather 4"
+    ITEMS:
+  BedBomb:
+    DISPLAY_NAME: "&c&lBed Bomb"
+    COMMANDS:
+      - "revampability give %player% bedbomb 2"
+    ITEMS:
+  PocketBard:
+    DISPLAY_NAME: "&6&lSteroids"
+    COMMANDS:
+      - "revampability give %player% pocketbard 3"
+    ITEMS:
+  InvisDustV2:
+    DISPLAY_NAME: "&6&lCloak of &8&lInvis"
+    COMMANDS:
+      - "revampability give %player% invisdustv2 2"
+    ITEMS:
+  WebBomb:
+    DISPLAY_NAME: "&c&lWeb Bomb"
+    COMMANDS:
+      - "revampability give %player% webbomb 3"
+    ITEMS:
+  StormBreaker:
+    DISPLAY_NAME: "&e&lStorm Breaker"
+    COMMANDS:
+      - "revampability give %player% stormbreaker 1"
+    ITEMS:
+  SandBurner:
+    DISPLAY_NAME: "&6&lSand Burner"
+    COMMANDS:
+      - "revampability give %player% sandburner 1"
+    ITEMS:
+
+
+#  ExampleItem:
+#    DISPLAY_NAME: "&6&lYour Item name"
+#    COMMANDS:
+#      - "yourcommand give %player% somestuff 1"
+#    ITEMS:
+#  - "ENDER_PEARL 16 NAME:&9Item_Name"
+#  - "ENDER_PEARL 16 DAMAGE_ALL:2 DURABILITY:3 NAME:&9Item_Name"
+
+# +++______------______------______------______------______+++
+#  +_______________________________________________________+ #
+#  |                  Abilities Section                    | #
+#  +_______________________________________________________+ #
+# +++______------______------______------______------______+++
+
+PARTNERPACKAGE:
+  MATERIAL: "ENDER_CHEST"
+  NAME: "&b&lPartner Package"
+  LORE:
+    - "&7Right-Click to open a partner package with powerful ITEMS inside"
+  PARTICLE_EFFECT:
+    # Name of the particle effect Set to "" to disable
+    NAME: "flame"
+    # List of all particles: explode, largeexplode, hugeexplosion, fireworksSpark, bubble, splash, suspended,
+    # depthSuspend, crit, magicCrit, smoke, largesmoke, spell, instantSpell, mobSpell, mobSpellAmbient, witchMagic,
+    # dripWater, dripLava, angryVillager, happyVillager, townaura, note, enchantmenttable, flame, lava, footstep,
+    # cloud, reddust, snowballpoof, snowshovel, slime, heart, iconcrack, blockcrack
+
+
+    # Radius within the particle effect is displayed
+    RADIUS: 5.0
+    # The amount of particles
+    AMOUNT: 100
+    # Range of the visibility
+    RANGE: 100
+    # The speed of particles
+    SPEED: 0.0
+    # Offset
+    OFFSET:
+      # Maximum distance particles can fly away from the center on the x-axis
+      # Maximum distance particles can fly away from the center on the y-axis
+      # Maximum distance particles can fly away from the center on the z-axis
+      X: 1.0
+      Y: 0.0
+      Z: 1.0
+
+
+  # Enable/Disable broadcast message when player opens the partner package
+  BROADCAST_ENABLED: true
+  BROADCAST_MESSAGE:
+    - "&c&l(!)&3 %player% &ehas opened a &e&lPartner Package!"
+    - "&aPurchasable at &b&lstore.revampmc.eu"
+
+  # Should we enable fireworks
+  FIREWORK_ENABLED: true
+
+SNOWBALL:
+  MATERIAL: "SNOW_BALL"
+  NAME: "&b&lSlowness Snowball"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7A powerful weapon to slow down your enemy."
+    - "&4&lWarning! &7Player must be within 7 block radius."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # Seconds that the player is affected by blindness and slowness
+  SECONDS: 5
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 5
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Slowness Snowball&e cooldown for &f%time%."
+  # Is the ability enabled?
+  ENABLED: true
+
+SWITCHEREGG:
+  # You can only use EGG or SNOW_BALL !!!
+  MATERIAL: "EGG"
+  NAME: "&d&lSwitcheroo Snowball"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to swap positions with a player!"
+    - "&4&lWarning! &7Player must be within 10 block radius."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 5
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Switcher Ball&e cooldown for &f%time%."
+  # The range within which the player can be hit
+  RANGE_OF_BLOCKS: 10
+  NO_RANGE_MESSAGE:
+    - "&6» &eYou failed to switch positions with %damagedplayer% as there out of range."
+  SHOOTER_MESSAGE:
+    - "&6» &eYou switched positions with %damagedplayer% using a &6Switcher Ball."
+  DAMAGEPLAYER-MESSAGE:
+    - "&6» &eYou switched positions with %shooter% using a &6Switcher Ball."
+  # Is the ability enabled?
+  ENABLED: true
+
+BLOCKEGG:
+  MATERIAL: "EGG"
+  NAME: "&6&lBlock Egg"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to block your enemy from building / breaking!"
+    - "&4&lWarning! &7Player must be within 7 block radius."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 120
+  # IN SECOND # The time that the player must wait before breaking/placing blocks.
+  COOLDOWN_BREAK_PLACE: 15
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Block Egg&e cooldown for &f%time%."
+  # The range within which the player can be hit
+  RANGE_OF_BLOCKS: 7
+  NO_BREAK_PLACE_MESSAGE:
+    - "&6» &eYou can't build or break for another &f%time%."
+  NO_RANGE_MESSAGE:
+    - "&6» &6%damagedplayer% &eis out of &frange."
+  # Is the ability enabled?
+  ENABLED: true
+
+THROWWEB:
+  MATERIAL: "WEB"
+  NAME: "&2&lThrowable Cobweb"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Throw this item to get your enemies stuck."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 5
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &Cobweb&e cooldown for &f%time%."
+  # Is the ability enabled?
+  ENABLED: true
+
+NINJA:
+  MATERIAL: "NETHER_STAR"
+  NAME: "&e&lNinja Ability"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Teleport to the last position you were hit."
+    - "&4&lWarning! &7Delay of 3 seconds."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # Delete the item after used?
+  ONE_TIME_USE: false
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 60
+  # IN SECONDS # Time that the player must wait before teleport to the last position he attacked/he has been attacked
+  TP_DELAY: 10
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Ninja Star&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou will be teleported in &f%time%."
+  TELEPORTED_OTHER_ENABLED: true
+  # Enable "TELEPORTED_OTHER_MESSAGE" on ability click?
+  TELEPORTED_OTHER_MESSAGE:
+    - "&6» &e%player% will be teleported to you in &f%time%."
+  SUCCESSFULLY_TELEPORTED_MESSAGE:
+    - "&6» &eYou have successfully used a Ninja Star."
+  # Is the ability enabled?
+  ENABLED: true
+
+GRAPPLINGHOOK:
+  MATERIAL: "FISHING_ROD"
+  NAME: "&6&lGrappling Hook"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to escape your enemies"
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 10
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Grappling Hook&e cooldown for &f%time%."
+  # Is the ability enabled?
+  ENABLED: true
+
+DISARMERAXE:
+  MATERIAL: "GOLD_AXE"
+  NAME: "&c&lSwapper Axe"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to remove your enemies helmet."
+    - "&4&lWarning! &7Only works on Helmet."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 180
+  # Put off only your enemy's armor
+  ONLY_HELMET: true
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Swapper Axe&e cooldown for &f%time%."
+  ITEM_SUCCESSFULLY_USED:
+    - "&7&m---*-----------------------*---"
+    - "&6» &eYou have used the &6Swapper Axe Ability."
+    - "  &6* &2%damagedplayer%&e's helmet will be removed in &63 seconds&e."
+    - "  &6* &eYou have ebeen placed on a &63 minute &ecooldown."
+    - "&7&m---*-----------------------*---"
+  POTION_EFFECT_MESSAGE:
+    - "&7&m---*-----------------------*---"
+    - "&6» &eYou have used the &6Swapper Axe Ability."
+    - "  &6* &2%damagedplayer%&e's is now frozen for &65 seconds&e."
+    - "  "
+    - "  &6* &eYou have ebeen placed on a &63 minute &ecooldown."
+    - "&7&m---*-----------------------*---"
+  POTION_EFFECT_MESSAGE_INVENTORY_FULL:
+    - "&7&m---*-----------------------*---"
+    - "&6» &eYou have used the &6Swapper Axe Ability."
+    - "  &6* &2%damagdplayer% &ehas a full inventory so instead was frozen."
+    - "  &6* &2%damagedplayer%&e's is now frozen for &65 seconds&e."
+    - "  "
+    - "  &6* &eYou have been placed on a &63 minute &ecooldown."
+    - "&7&m---*-----------------------*---"
+  # IN SECONDS
+  POTION_EFFECT_TIME: 5
+  # Is the ability enabled?
+  ENABLED: true
+
+FREEZEGUN:
+  MATERIAL: "GOLD_HOE"
+  NAME: "&f&lFreeze Gun"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to freeze your enemy."
+    - " "
+    - "&7&m-----------------------------"
+  # Seconds that the player is affected by slowness
+  SECONDS: 5
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 30
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Freeze Gun&e cooldown for &f%time%."
+  # Is the ability enabled?
+  ENABLED: true
+
+INVISDUST:
+  MATERIAL: "INK_SACK"
+  NAME: "&3&lInvisibility Dust"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to invisibility to hit."
+    - " "
+    - "&7&m-----------------------------"
+  # Seconds that the player is affected by invisibility
+  SECONDS: 180
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 300
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Invis Dust&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have become invisible till you've been hit."
+  PLAYER_WAS_ATTACKED:
+    - "&6» &eYou have lost your invisibility because you were hit"
+  # Is the ability enabled?
+  ENABLED: true
+
+COCAINE:
+  MATERIAL: "SUGAR"
+  NAME: "&f&lCocaine"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to swap positions with a player!"
+    - "&4&lWarning! &7Player must be within 16 block radius."
+    - " "
+    - "&7&m-----------------------------"
+  # Seconds that the player is affected by speed
+  SECONDS: 5
+  # Level of the speed - 0 equals to speed 1 | 1 equals to speed 2, etc.
+  AMPLIFIER: 2
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 90
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Cocaine&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have have used &6COCAINE &efor 5 seconds of &fSpeed 2."
+  # Is the ability enabled?
+  ENABLED: true
+
+LUMBERJACK:
+  MATERIAL: "GOLD_AXE"
+  NAME: "&6&lLumberJack Axe"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Remove entires trees using this."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 10
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6LumberJack&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou still have a &6Lumber Jack&e to remove an entire tree."
+  # Is the ability enabled?
+  ENABLED: true
+
+PORTABLESTRENGTH:
+  MATERIAL: "MUSHROOM_SOUP"
+  NAME: "&6&lPeperoni Pizza"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to give you strength"
+    - " "
+    - "&7&m-----------------------------"
+  # Seconds that the player is affected by strength
+  SECONDS: 4
+  # Level of the speed - 0 equals to speed 1 | 1 equals to speed 2, etc.
+  AMPLIFIER: 1
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 90
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Peperoni Pizza &e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used a &cPeperoni Pizza. &eYou have received &6Strength II &efor &64 seconds."
+  # Is the ability enabled?
+  ENABLED: true
+
+SECONDCHANCE:
+  MATERIAL: "FEATHER"
+  NAME: "&d&lSecond Chance"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to gain a second chance at pearling."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 60
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Second Chance &e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used a &cSecond Chance&e to give you a second chance at pearling."
+  # YOU MUST PUT YOUR CORE/PLUGIN COMMAND TO RESET THE ENDERPEARL COOLDOWN
+  # IF YOUR PLUGIN DOESN'T SUPPORT IT, YOU CAN'T USE IT
+  COMMAND_TO_PERFORM:
+    - "timer EnderPearl %player% 0"
+  # Is the ability enabled?
+  ENABLED: true
+
+COOLDOWNBOW:
+  MATERIAL: "BOW"
+  NAME: "&5&lCooldown Bow"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Shoot an arrow at your enemy to give them a Cooldown for Enderpearling."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 120
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Cooldown Bow &e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used a &cCooldown Bow. &eThey have received &6a Cooldown &efor &616 seconds."
+  ITEM_USED_MESSAGE_OTHER: "&6» &eYou have been hit with a &cCooldown Bow."
+  # %player% is the player you have shoot
+  # YOU MUST PUT YOUR CORE/PLUGIN COMMAND TO SET THE ENDERPEARL COOLDOWN
+  # IF YOUR PLUGIN DOESN'T SUPPORT IT, YOU CAN'T USE IT
+  COMMAND_TO_PERFORM:
+    - "timer EnderPearl %player% 15"
+  # Is the ability enabled?
+  ENABLED: true
+
+PYROBALL:
+  MATERIAL: "SNOW_BALL"
+  NAME: "&4&lPyro Ball"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to swing through the air."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 45
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Pyro Ball &e cooldown for &f%time%."
+  # Is the ability enabled?
+  ENABLED: true
+
+ROCKET:
+  MATERIAL: "FIREWORK"
+  NAME: "&2&lRocket"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to soar through the sky."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 45
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Rocket &e cooldown for &f%time%."
+  # Delete the item after used?
+  ONE_TIME_USE: true
+  # Is the ability enabled?
+  ENABLED: true
+
+PUMPKINSWAPPER:
+  MATERIAL: "IRON_SWORD"
+  NAME: "&2&lPumpkin Swapper"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to switch your"
+    - "&7enemies helmet with a Pumpkin."
+    - "&4&lWarning! &7Only switches Helmet."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 15
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Pumpkin Swapper &e cooldown for &f%time%."
+  # 0.25 = 25%, 1.00 = 100%
+  SUCCESS_PERCENT: 0.25
+  SHOOTER_MESSAGE:
+    - "&6» &eYou removed %damagdplayer%'s helmet."
+  DAMAGED_PLAYER_MESSAGE:
+    - "&6» &e%damager% removed your Helmet."
+  # Is the ability enabled?
+  ENABLED: true
+
+RANDOMIZER:
+  MATERIAL: "COAL"
+  NAME: "&9&lRandomizer"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item swap one of the slots"
+    - "&7with another in your enemies inventory"
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 120
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Randomizer &e cooldown for &f%time%."
+  SHOOTER_MESSAGE:
+    - "&6» &eYou have swapped a slot with another slot of &6%damagedplayer%."
+  DAMAGED_PLAYER_MESSAGE:
+    - "&6» &eYou have swapped a slot with another slot."
+  NO-HOTBAR-ITEMS:
+    - "&6» &6%damagedplayer% &ehas no items in there &fhotbar."
+  NO-HAND-ITEMS:
+    - "&6» &6%damagedplayer%&e is not holding an &fitem."
+  # Is the ability enabled?
+  ENABLED: true
+
+ROTATIONSTICK:
+  MATERIAL: "STICK"
+  NAME: "&5&lRotation Stick"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to make a player"
+    - "&7turn 180 degrees"
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  COOLDOWN: 60  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Rotation Stick&e cooldown for &f%time%."
+  SHOOTER_MESSAGE:
+    - "&6» &eYou have rotated %damagedplayer% a full 180."
+  DAMAGED_PLAYER_MESSAGE:
+    - "&6» &eYou have been rotated a full 180."
+  # Is the ability enabled?
+  ENABLED: true
+
+ULTIMATEPEARL:
+  MATERIAL: "ENDER_PEARL"
+  NAME: "&b&lUltimate Pearl"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to get a shorter enderpearl cooldown!"
+    - " "
+    - "&7&m-----------------------------"
+  COOLDOWN_MESSAGE:
+    - "&7You still have an &bUltimate Pearl &7cooldown for another %time%."
+  # YOU MUST PUT YOUR CORE/PLUGIN COMMAND TO SET THE ENDERPEARL COOLDOWN
+  # IF YOUR PLUGIN DOESN'T SUPPORT IT, YOU CAN'T USE IT
+  COMMAND_TO_PERFORM:
+    - "timer set EnderPearl %player% 5"
+  # Is the ability enabled?
+  ENABLED: true
+
+GUARDIAN_ANGEL:
+  MATERIAL: "GHAST_TEAR"
+  NAME: "&d&lGuardian Angel"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item within 30 seconds max"
+    - "&7to get back to life if you drop below 2 hearts"
+    - " "
+    - "&7&m-----------------------------"
+  # In health -> 2.0 = 1 heart, 20.0 = 10 hearts
+  MAX_DROP_HEALTH: 4.0
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 300
+  # IN SECONDS # The maximum time that this item works
+  MAX_SECONDS: 30
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Guardian Angel&e cooldown for &f%time%."
+  HEAL_MESSAGE:
+    - "&6» &eYou &cGuardian Angel &eitem has &6healed &eyou."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used an &cGuardian Angel&e if you drop below &62 hearts &eyou will be &frevived"
+  # Is the ability enabled?
+  ENABLED: true
+
+REFILLCHEST:
+  MATERIAL: "BREWING_STAND_ITEM"
+  NAME: "&6&lLazy Brewer"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Get a full dub of pots"
+    - " "
+    - "&7&m-----------------------------"
+  PLACE_MESSAGE:
+    - "&6» &eYou have used a Lazy Brewer."
+  BLOCKS_NEAR:
+    - "&6» &eThere is blocks in the way."
+  # Is the ability enabled?
+  ENABLED: true
+
+ICARO_FEATHER:
+  MATERIAL: "FEATHER"
+  NAME: "&f&lIcaro Feather"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to withstand all fall damage."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 300
+  # IN SECONDS # The maximum time that this item works
+  MAX_SECONDS: 30
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Feather&e cooldown for &f%time%."
+  USE_MESSAGE:
+    - "&6» &eYou're ability item has saved you from fall damage."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used an &cFeather Ability &eyou will not take fall-damage."
+  # Is the ability enabled?
+  ENABLED: true
+
+BEDBOMB:
+  MATERIAL: "BED"
+  NAME: "&c&lBed Bomb"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to make a player explode!"
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 300
+  # IN SECONDS # The maximum time that this item works
+  MAX_SECONDS: 30
+  # IN BLOCKS # The maximum range that the item works
+  RANGE_BLOCKS: 15
+  # IN SECONDS
+  POTION_EFFECT_TIME: 7
+  # Level of the blindness and slowness - 0 equals to slowness 1 | 1 equals to slowness 2, etc.
+  AMPLIFIER: 2
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Bed Bomb&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used your Bed Bomb&e ability to slow your enemy."
+  # Is the ability enabled?
+  ENABLED: true
+
+POCKET_BARD:
+  MATERIAL: "DOUBLE_PLANT"
+  NAME: "&6&lSteroids"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item to gain"
+    - "&7insane super-human ability"
+    - " "
+    - "&7&m-----------------------------"
+  # Seconds that the player is affected by speed
+  STRENGTH_SECONDS: 5
+  # Level of the speed - 0 equals to speed 1 | 1 equals to speed 2, etc.
+  STRENGTH_AMPLIFIER: 1
+  # Seconds that the player is affected by resistance
+  RESISTANCE_SECONDS: 5
+  # Level of the resistance - 0 equals to resistance 1 | 1 equals to resistance 2, etc.
+  RESISTANCE_AMPLIFIER: 2
+  # Seconds that the player is affected by regeneration
+  REGENERATION_SECONDS: 5
+  # Level of the regeneration - 0 equals to regeneration 1 | 1 equals to regeneration 2, etc.
+  REGENERATION_AMPLIFIER: 2
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 300
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Pocket Bard&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&eYou have used the &6Pocket Bard &eability!"
+    - "&eYou received &eStrength II&e!"
+    - "&eYou received &eResistance III&e!"
+    - "&eYou received &eRegeneration III&e!"
+  # Is the ability enabled?
+  ENABLED: true
+
+INVISDUSTV2:
+  MATERIAL: "INK_SACK"
+  NAME: "&6&lCloak of &8&lInvis"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item not only turn invisible"
+    - "&7but also turn your armor invisible"
+    - " "
+    - "&7&m-----------------------------"
+  # Seconds that the player is affected by invisibility
+  SECONDS: 180
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 300
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Invis Cloak&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have become invisible till your hit."
+  PLAYER_WAS_ATTACKED:
+    - "&6» &eYou have taken damage you are now no longer invisible."
+  # Is the ability enabled?
+  ENABLED: true
+
+WEBBOMB:
+  MATERIAL: "WEB"
+  NAME: "&c&lWeb Bomb"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Bomb your enemies with this web."
+    - " "
+    - "&7&m-----------------------------"
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 20
+  # In blocks, the range within the webbomb works
+  RADIUS: 3
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Web Bomb&e cooldown for &f%time%."
+  # Is the ability enabled?
+  ENABLED: true
+
+STORMBREAKER:
+  MATERIAL: "STONE_AXE"
+  NAME: "&e&lStorm Breaker"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Use this item in a certain radius"
+    - "&7to strike lightning down."
+    - " "
+    - "&7&m-----------------------------"
+  # In blocks, the range within the stormbreaker works
+  RADIUS: 7
+  # In health -> 2.0 = 1 heart, 20.0 = 10 hearts
+  DAMAGE: 6.0
+  # Enable cooldown between item uses?
+  COOLDOWN_ENABLED: true
+  # IN SECONDS # The time that the player must wait before using this item again
+  COOLDOWN: 60
+  COOLDOWN_MESSAGE:
+    - "&6» &eYou still have a &6Storm Breaker&e cooldown for &f%time%."
+  ITEM_USED_MESSAGE:
+    - "&6» &eYou have used your &cStorm Breaker &eto strike lightning."
+  # Is the ability enabled?
+  ENABLED: true
+
+SANDBURNER:
+  MATERIAL: "DIAMOND_SPADE"
+  NAME: "&6&lSand Burner"
+  LORE:
+    - "&7&m-----------------------------"
+    - " "
+    - "&7Mine sand it will ll auto smelt its self."
+    - " "
+    - "&7&m-----------------------------"
+
+# +++______------______------______------______------______+++
+#  +_______________________________________________________+ #
+#  |                   Messages Section                    | #
+#  +_______________________________________________________+ #
+# +++______------______------______------______------______+++
+
+REVAMP_PACKAGES:
+  MESSAGE:
+    - "&8&m-------------------------------"
+    - "&b&l» &9&lRevamp&3&lPackages &a&l«"
+    - ""
+    - "&b/revampability &7« - » &aGeneral Help command."
+    - "&b/revampability give (player) (item) (amount) &7« - » &aGive an ability to a player."
+    - "&b/package give (player) (amount) &7« - » &aGive a partner package to a player."
+    - "&b/revampability items &7« - » &aList of all abilities."
+    - "&8&m-------------------------------"
+  LIST:
+    - "&8&m-------------------------------"
+    - "&b&lITEMS:"
+    - "   - &6&lSwitcher Egg"
+    - "   - &b&lSlowness Snowball"
+    - "   - &6&lBlock Egg"
+    - "   - &2&lThrowWeb"
+    - "   - &b&lUltimate Pearl"
+    - "   - &6&lGrappling Hook"
+    - "   - &2&lPumpkin Swapper"
+    - "   - &e&lNinja"
+    - "   - &c&lSwapper Axe"
+    - "   - &e&lPyroBall"
+    - "   - &f&lFreeze Gun"
+    - "   - &3&lInvisibility Dust"
+    - "   - &d&lSecond Chance"
+    - "   - &2&lRocket"
+    - "   - &c&lDisarmer Axe"
+    - "   - &9&lRandomizer"
+    - "   - &5&lCooldown Bow"
+    - "   - &f&lCocaine"
+    - "   - &6&lPortable Strength"
+    - "   - &4&lPyro Ball"
+    - "   - &5&lRotation Stick"
+    - "   - &b&lUltimate Pearl"
+    - "   - &6&lLumberJack Axe"
+    - "   - &d&lGuardian Angel"
+    - "   - &6&lRefill Chest"
+    - "   - &f&lIcaro Feather"
+    - "   - &c&lBed Bomb"
+    - "   - &6&lPocket Bard"
+    - "   - &3&lInvisibility Dust V2"
+    - "   - &c&lWeb Bomb"
+    - "   - &e&lStorm Breaker"
+    - "   - &6&lSand Burner"
+    - "&8&m-------------------------------"
+
+#ONLY WORKS IF YOU HAVE WORLDGUARD ENABLED
+CANNOT_USE_HERE_WORLDGUARD: "&7(&3RevampPackages&7) &8» &cYou cannot use this ability in this region!"
+
+
+#   ██▀███  ▓█████ ██▒   █▓ ▄▄▄       ███▄ ▄███▓ ██▓███      ██▓███   ▄▄▄       ▄████▄   ██ ▄█▀▄▄▄        ▄████ ▓█████   ██████
+#  ▓██ ▒ ██▒▓█   ▀▓██░   █▒▒████▄    ▓██▒▀█▀ ██▒▓██░  ██▒   ▓██░  ██▒▒████▄    ▒██▀ ▀█   ██▄█▒▒████▄     ██▒ ▀█▒▓█   ▀ ▒██    ▒
+#  ▓██ ░▄█ ▒▒███   ▓██  █▒░▒██  ▀█▄  ▓██    ▓██░▓██░ ██▓▒   ▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ▓███▄░▒██  ▀█▄  ▒██░▄▄▄░▒███   ░ ▓██▄
+#  ▒██▀▀█▄  ▒▓█  ▄  ▒██ █░░░██▄▄▄▄██ ▒██    ▒██ ▒██▄█▓▒ ▒   ▒██▄█▓▒ ▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄░██▄▄▄▄██ ░▓█  ██▓▒▓█  ▄   ▒   ██▒
+#  ░██▓ ▒██▒░▒████▒  ▒▀█░   ▓█   ▓██▒▒██▒   ░██▒▒██▒ ░  ░   ▒██▒ ░  ░ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄▓█   ▓██▒░▒▓███▀▒░▒████▒▒██████▒▒
+#  ░ ▒▓ ░▒▓░░░ ▒░ ░  ░ ▐░   ▒▒   ▓▒█░░ ▒░   ░  ░▒▓▒░ ░  ░   ▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒▒▒   ▓▒█░ ░▒   ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░
+#    ░▒ ░ ▒░ ░ ░  ░  ░ ░░    ▒   ▒▒ ░░  ░      ░░▒ ░        ░▒ ░       ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░ ▒   ▒▒ ░  ░   ░  ░ ░  ░░ ░▒  ░ ░
+#    ░░   ░    ░       ░░    ░   ▒   ░      ░   ░░          ░░         ░   ▒   ░        ░ ░░ ░  ░   ▒   ░ ░   ░    ░   ░  ░  ░
+#     ░        ░  ░     ░        ░  ░       ░                              ░  ░░ ░      ░  ░        ░  ░      ░    ░  ░      ░
+#                      ░                                                       ░

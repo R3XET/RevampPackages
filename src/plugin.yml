@@ -1,0 +1,18 @@
+main: eu.revamp.packages.RevampPackages
+name: RevampPackages
+website: www.revampmc.eu
+author: R3XET
+version: "3.3"
+softdepend: [WorldGuard]
+commands:
+  package:
+    aliases:
+      - revamppackage
+    description: Gives a partner package where you can obtain cool stuff.
+    permission: revamppackages.package
+  revampability:
+    aliases:
+      - ability
+      - abilities
+    description: Main plugin command.
+    permission: revamppackages.admin
